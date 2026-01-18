@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Vintage Diner Café</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">Vintage Diner</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menü</a>
+            <a href="#about">Über uns</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <h1>Authentic Vintage Diner</h1>
+    <p>Best Coffee & Burgers since 1956</p>
+    <a href="#menu" class="btn">Unsere Speisekarte</a>
+</section>
+
+<section id="menu" class="section menu">
+    <h2>Unsere Klassiker</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🍔 Burger</h3>
+            <p>100 % Rind, hausgemacht</p>
+        </div>
+        <div class="card">
+            <h3>☕ Kaffee</h3>
+            <p>Frisch gebrüht & aromatisch</p>
+        </div>
+        <div class="card">
+            <h3>🥧 Pies</h3>
+            <p>Nach Originalrezepten</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section about">
+    <h2>Über Uns</h2>
+    <p>
+        Unser Vintage Diner Café bringt den Charme der 50er Jahre zurück.
+        Mit Liebe zum Detail, klassischen Rezepten und echter Diner-Atmosphäre
+        schaffen wir einen Ort zum Wohlfühlen.
+    </p>
+</section>
+
+<section id="contact" class="section contact">
+    <h2>Kontakt & Öffnungszeiten</h2>
+    <p><strong>Adresse:</strong> Main Street 12, 12345 City</p>
+    <p><strong>Öffnungszeiten:</strong> Mo–So: 08:00 – 22:00 Uhr</p>
+    <p><strong>Telefon:</strong> +49 123 456789</p>
+
+    <a href="mailto:info@vintagediner.de" class="btn">E-Mail senden</a>
+</section>
+
+<footer>
+    <p>© 2026 Vintage Diner Café | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5E6C8;
+    color: #3B2F2F;
+}
+
+header {
+    background-color: #3B2F2F;
+    color: #F5E6C8;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+nav a {
+    color: #F5E6C8;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #B23A2F;
+    color: #F5E6C8;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #3FA7A3;
+    color: #1C1C1C;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #FFF;
+    border: 3px solid #3B2F2F;
+    padding: 30px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.about {
+    background-color: #FFF1D6;
+}
+
+.contact {
+    background-color: #EAD8B6;
+}
+
+footer {
+    background-color: #1C1C1C;
+    color: #F5E6C8;
+    text-align: center;
+    padding: 20px;
+}
